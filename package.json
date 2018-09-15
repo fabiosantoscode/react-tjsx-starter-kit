@@ -1,0 +1,30 @@
+{
+  "name": "react-tjsx-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel -p 3000 --open $BROWSER lib/index.html",
+    "build": "parcel build lib/index.html",
+    "test": "echo 'No test defined'; exit 1",
+    "precommit": "npm run lint --silent && npm run test --silent",
+    "lint": "standard --fix lib/**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ecstatic": "^3.3.0",
+    "emotion": "^9.2.8",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.1",
+    "react-emotion": "^9.2.8",
+    "react-helmet": "^5.2.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "tjsx": "^1.0.3"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "parcel-bundler": "1.9.4",
+    "standard": "^12.0.1"
+  }
+}
